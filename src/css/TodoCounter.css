@@ -3,6 +3,7 @@
    font-weight: normal;
    text-align: center; /* Centrar el texto */
    margin: 20px 0; /* Margen superior e inferior */ 
+   padding: 10%;
 }
 .TodoCounter span{
    font-weight: bold;
