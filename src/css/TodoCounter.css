@@ -1,0 +1,9 @@
+.TodoCounter{ 
+   color: #333; /* Color gris oscuro */
+   font-weight: normal;
+   text-align: center; /* Centrar el texto */
+   margin: 20px 0; /* Margen superior e inferior */ 
+}
+.TodoCounter span{
+   font-weight: bold;
+}

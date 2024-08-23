@@ -1,8 +1,8 @@
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { CreateTodoButton } from './CreateTodoButton';
-import { TodoItem  } from './TodoItem';
+import { TodoCounter } from './js/TodoCounter.js';
+import { TodoSearch } from './js/TodoSearch.js';
+import { TodoList } from './js/TodoList.js';
+import { CreateTodoButton } from './js/CreateTodoButton';
+import { TodoItem  } from './js/TodoItem.js';
 import './App.css';
 import React from 'react';
 
@@ -14,7 +14,7 @@ const defauldTodos = [
 ];
 function App() {
   return (
-    <React.Fragment>
+    <>
       <TodoCounter 
         completed={8}
         total= {10}
@@ -31,18 +31,8 @@ function App() {
 
       <CreateTodoButton/>
       
-    </React.Fragment>
+    </>
   );
 }
-
-
-
-
-
-
-
-
-
-
 
 export default App;
