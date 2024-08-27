@@ -10,16 +10,26 @@ const defauldTodos = [
   { text:'Cortar cebolla', completed:  true},
   { text:'Llorar con la llorona', completed:  false},
   { text:'Hacer aseo', completed:  false},
-  { text:'Dormir', completed:  false}
+  { text:'Dormir', completed:  false},
+  
 ];
 function App() {
+  //estado del input para poder guardar el valor en el onchange o OnClick(Listener)
+  const[todos,setTodos]= React.useState(defauldTodos);
+  const[searchValue, setSearchValue] = React.useState('');
+  console.log('Los usuarios  buscan todos:' + searchValue);
+
+  //contador de todos haciendo uso de estados
+
+  const completedTodos = todos.filter(
+  todo => !!todo.completed).length;
+  const totalTodos = todos.length;
+
   return (
     <>
-      <TodoCounter 
-        completed={8}
-        total= {10}
-      />
-      <TodoSearch/>
+      <TodoCounter completed={completedTodos} total= {todos.length}/>
+      <TodoSearch searchValue={searchValue} 
+                  setSearchValue={setSearchValue}/>
 
       <TodoList>
         {defauldTodos.map(todo => (
