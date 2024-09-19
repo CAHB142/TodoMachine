@@ -42,4 +42,13 @@ import React from "react";
   
   }
 
+  // const defaultTodos = [
+//   { text:'Cortar cebolla', completed:  true},
+//   { text:'Llorar con la llorona', completed:  false},
+//   { text:'Hacer aseo', completed:  false},
+//   { text:'Dormir', completed:  false},
+// ];
+// localStorage.setItem('TODOS_V1',JSON.stringify(defaultTodos));
+// localStorage.removeItem('TODOS_V1');
+
   export {useLocalStorage};

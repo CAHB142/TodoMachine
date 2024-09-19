@@ -1,15 +1,15 @@
 import './App.css';
 import React from 'react';
-import { useLocalStorage } from './js/useLocalStorage.js';
+import { useLocalStorage } from './useLocalStorage.js';
 
-import { TodoCounter } from './js/TodoCounter.js';
-import { TodoSearch } from './js/TodoSearch.js';
-import { TodoList } from './js/TodoList.js';
-import { CreateTodoButton } from './js/CreateTodoButton';
-import { TodoItem } from './js/TodoItem.js';
-import {TodosLoading} from './js/TodosLoading.js';
-import {TodosError} from './js/TodosError.js';
-import {EmptyTodos} from './js/EmptyTodos.js';
+import { TodoCounter } from '../TodoCounter';
+import { TodoSearch } from '../TodoSearch';
+import { TodoList } from '../TodoList';
+import { CreateTodoButton } from '../CreateTodoButton';
+import { TodoItem } from '../TodoItem';
+import {TodosLoading} from '../TodosLoading.js';
+import {TodosError} from '../TodosError.js';
+import {EmptyTodos} from '../EmptyTodos.js';
 
 
 // const defaultTodos = [
