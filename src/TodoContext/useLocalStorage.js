@@ -42,7 +42,7 @@ import React from "react";
   
   }
 
-  // const defaultTodos = [
+//   const defaultTodos = [
 //   { text:'Cortar cebolla', completed:  true},
 //   { text:'Llorar con la llorona', completed:  false},
 //   { text:'Hacer aseo', completed:  false},
