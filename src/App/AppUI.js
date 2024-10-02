@@ -7,6 +7,8 @@ import {TodosLoading} from '../TodosLoading/index.js';
 import {TodosError} from '../TodosError/index.js';
 import {EmptyTodos} from '../EmptyTodos/index.js';
 import { TodoContext } from '../TodoContext/index.js';
+import { Modal } from '../Modal/index.js';
+import {TodoForm} from '../TodoForm'
 import React from 'react';
   function AppUI(){
     const {   
@@ -14,7 +16,9 @@ import React from 'react';
         completeTodo,
         deleteTodo,
         loading,
-        error,    
+        error,
+        openModal, 
+        setOpenModal,   
     }= React.useContext(TodoContext);
     return (
         <>
@@ -38,8 +42,12 @@ import React from 'react';
               )}
             </TodoContext.Consumer>
     
-          <CreateTodoButton />
-    
+          <CreateTodoButton setOpenModal={setOpenModal} />
+          {openModal && (
+            <Modal>
+              <TodoForm/>
+            </Modal>
+          )}
         </>
       );
   }

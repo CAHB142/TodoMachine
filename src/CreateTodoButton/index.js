@@ -1,11 +1,13 @@
-import "./CreateTodoButton.css"
+import React from 'react';
+import './CreateTodoButton.css';
+import { setOpenModal } from '../TodoContext';
 
-function CreateTodoButton(){
+function CreateTodoButton({setOpenModal}){
   return(
     <button class="CreateTodoButton" 
-    onClick={(event) => {console.log("le diste click")
-                         console.log(event)
-                         console.log(event.target)}
+    onClick={() => {
+      setOpenModal(state => !state);
+    }
      }>+</button>
   )
 }

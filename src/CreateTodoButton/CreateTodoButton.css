@@ -1,24 +1,25 @@
 .CreateTodoButton{
-    font-family: monospace;
-    font-size: 1.5rem;
-    color: #FAFAFA;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 2px solid #8d8d8d;
-    background: #252525;
-    box-shadow: 3px 3px #8d8d8d;
-    cursor: pointer;
-    margin: 35px 0;
-    transform: rotate(0);
-    transition: .3s ease;
-  }
-  
-  button:active {
-    box-shadow: none;
-    transform: translate(3px, 3px);
-  }
+  background-color:#61dafa;
+  box-shadow:0 5px 25px rgba(97,218,250,.5);
+  border:none;border-radius:50%;cursor:pointer;
+  font-size:50px;
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  font-weight:700;
+  color:#fafafa;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:64px;
+  width:64px;
+  z-index:1;
+  transform:rotate(0);
+  transition:.3s ease}
 
-  .CreateTodoButton:hover{
-    transform: rotate(224deg);
-  }
+  .CreateTodoButton:hover{transform:rotate(224deg)}
+  
+
+
+
+
